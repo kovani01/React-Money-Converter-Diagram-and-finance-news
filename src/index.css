@@ -1,0 +1,251 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url(https://images.unsplash.com/photo-1607728285423-a94d41a4d2f6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3450&q=80);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 500px;
+}
+.card-body{
+  position: relative;
+  min-width: 508px;
+  height: 314px;
+  transform-style: preserve-3d;
+  perspective: 500px;
+}
+.card-body .face1{
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+
+  color: rgb(255, 255, 255);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.9);
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(2px);
+  transform-style: preserve-3d;
+  transition: 1s;
+  }
+  .card-body .face2{
+    margin-top: -274px;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.9);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(2px);
+    transform-style: preserve-3d;
+    transition: 1s;
+  }
+
+  .card-body:hover .face1.front{
+    transform: rotateY(180deg);
+  }
+  .card-body .face2.back{
+    transform: rotateY(180deg);
+  }
+  .card-body:hover .face2.back{
+    transform: rotateY(360deg);
+  }
+  
+.card-body .face1.front .debit{
+  position: absolute;
+  width: 100%;
+  margin-top: 25px;
+padding:8px 40px 10px ;
+  font-weight: 700;
+  background-color: #000;
+
+}
+.card-body .face1.front .bank{
+  position: absolute;
+  padding:220px 0 0 95px ;
+  font-weight: 700;
+  color: #000;
+  
+}
+.card-body .face2.back .ecv{
+  position: absolute;
+  top: 20px;
+  left: 30px;
+
+}
+.card-body .face2.back .amount{
+  position: absolute;
+  top: 50px;
+  left: 30px;
+  
+}
+.card-body .face2.back .asfor{
+  position: absolute;
+  top: 96px;
+  left: 30px;
+}
+.card-body .face2.back .form-input1{
+  position: absolute;
+  top: 130px;
+  left: 30px;
+}
+.card-body .face2.back .form-input2{
+  position: absolute;
+  top: 200px;
+  left: 30px;
+}
+.card-body .face2.back .reload{
+  position: relative;
+  left: 0px;
+  top: 60px;
+  cursor: pointer;
+
+}
+.card-body .face2.back .reload:hover{
+  color: #fff;
+  cursor: pointer;
+
+}
+.plot{
+  max-width: 800px;
+  position: relative;
+  align-items: center;
+  margin: 100px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.9);
+}
+.plot h1{
+  padding-left: 40px;
+}
+.news{
+  width: 70%;
+  position: relative;
+  align-items: center;
+  margin: 300px 100px;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  
+  }
+  .news img{
+    width: 100%;
+  }
+  .h1_a{
+    padding: 20px;
+    background-color: rgb(109, 109, 109);
+    
+    color: #fff;
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+    width: 47%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .h1_a:hover{
+    background-color: rgb(163, 163, 163);
+    cursor: pointer;
+  }
+footer{
+  height: 300px;
+  color: #fff;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.9);
+    background: rgba(12, 12, 12, 0.7);
+    backdrop-filter: blur(2px);
+}
+footer a{
+color: #fff;
+}
+nav {
+  color: #fff;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.9);
+    background: rgba(12, 12, 12, 0.7);
+    backdrop-filter: blur(2px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+}
+nav ul{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  list-style: none;
+  margin-bottom: 0;
+  margin-right: 100px;
+  font-size: 14px;
+
+}
+nav a{
+  color: #fff;
+}
+nav ul li{
+  margin-left: 60px;
+  padding: 10px;
+}
+.collapse a{
+  color: #fff;
+  
+}
+nav a:hover{
+  color: rgb(158, 158, 158);
+  text-decoration: none;
+}
+.navbar-brand{
+  padding: 10px 20px;
+  font-size: 20px;
+} 
+
+@media (max-width: 576px){
+.card-body{
+  position: relative;
+  min-width: 475px;
+  height: 314px;
+  transform-style: preserve-3d;
+  perspective: 500px;
+}
+.card-body .face2.back .form-input1 input{
+  min-width: 250px;
+  position: absolute;
+  top: 10px;
+
+}
+.card-body .face2.back .form-input1 select{
+  min-width: 100px;
+  position: absolute;
+  top: 10px;
+  left: 280px;
+}
+.card-body .face2.back .form-input2 input{
+  min-width: 250px;
+  position: absolute;
+  top: 10px;
+}
+.card-body .face2.back .form-input2 select{
+  min-width: 100px;
+  position: absolute;
+  top: 10px;
+  left: 280px;
+}
+}
+@media (max-width: 993px){
+  .navbar{
+    padding: 30px;
+    color: #fff;
+  }
+}
